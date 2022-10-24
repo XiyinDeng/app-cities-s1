@@ -31,7 +31,7 @@ df = df[df.capital.isin(capital_filter)]
 if country_filter!='ALL':
     df = df[df.country == country_filter]
 
-# show on map
+# show on map (need columns named 'atittude' and 'longitude')
 st.map(df)
 
 # show df
